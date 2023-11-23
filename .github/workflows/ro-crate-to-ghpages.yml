@@ -4,9 +4,7 @@ on:
     branches:
       - main
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-22.04
-    concurrency: ci-${{github.ref}}
+  build:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -26,6 +24,13 @@ jobs:
         with:
           crate_path: pdt_rtbm
 
+  deploy:
+    needs: build
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    runs-on: ubuntu-22.04
+    concurrency: ci-${{github.ref}}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
@@ -34,5 +39,5 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1  
+        uses: actions/deploy-pages@v2
           
