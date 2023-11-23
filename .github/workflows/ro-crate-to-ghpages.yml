@@ -7,6 +7,11 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     concurrency: ci-${{github.ref}}
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    runs-on: ubuntu-22.04
+    concurrency: ci-${{github.ref}}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -26,14 +31,6 @@ jobs:
         with:
           crate_path: pdt_rtbm
 
-  deploy:
-    needs: build
-    permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-    runs-on: ubuntu-22.04
-    concurrency: ci-${{github.ref}}
-    steps:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
