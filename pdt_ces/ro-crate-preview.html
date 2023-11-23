@@ -1,0 +1,428 @@
+
+
+<html>
+<head>
+
+
+<script type="application/ld+json"> 
+  {
+  "@context": [
+    "http://doi.org/10.5063/schema/codemeta-2.0",
+    "http://w3id.org/ro/crate/1.2-DRAFT/context"
+  ],
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "http://w3id.org/ro/crate/1.2-DRAFT"
+      },
+      "author": {
+        "@id": "http://orcid.org/0000-0003-0401-5122"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "SoftwareApplication"
+      ],
+      "name": "Cultural Ecosystem Services pDT - Biodiversity Model",
+      "description": "Species distribution models for species that provide cultural ecosystem services.",
+      "softwareVersion": "0.1.0",
+      "dateCreated": "2023-06-29",
+      "dateModified": "2023-09-10",
+      "license": {
+        "@id": "https://spdx.org/licenses/MIT.html"
+      },
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-6755-9456"
+        },
+        {
+          "@id": "http://orcid.org/"
+        },
+        {
+          "@id": "http://orcid.org/"
+        },
+        {
+          "@id": "http://orcid.org/"
+        },
+        {
+          "@id": "http://orcid.org/"
+        }
+      ],
+      "codeRepository": "https://github.com/BioDT/uc-ces/",
+      "contributors": "",
+      "programmingLanguage": "R",
+      "runtimePlatform": "Docker",
+      "operatingSystem": [
+        "Linux",
+        "Windows",
+        "Mac"
+      ],
+      "softwareRequirements": [
+        "tidymodels",
+        "terra",
+        "rbif"
+      ],
+      "@reverse": {
+        "about": [
+          {
+            "@id": "ro-crate-metadata.json"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6755-9456",
+      "@type": "Person",
+      "name": "Simon Rolph",
+      "email": "simrol@ceh.ac.uk",
+      "affiliation": {
+        "@id": " https://ror.org/00pggkr55"
+      },
+      "@reverse": {
+        "author": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://orcid.org/",
+      "@type": "Person",
+      "name": "Chris Andrews",
+      "email": "",
+      "affiliation": {
+        "@id": " https://ror.org/00pggkr55"
+      }
+    },
+    {
+      "@id": "http://orcid.org/",
+      "@type": "Person",
+      "name": "Will Bolton",
+      "email": "",
+      "affiliation": {
+        "@id": " https://ror.org/00pggkr55"
+      }
+    },
+    {
+      "@id": "http://orcid.org/",
+      "@type": "Person",
+      "name": "Dylan Carbone",
+      "email": "",
+      "affiliation": {
+        "@id": " https://ror.org/00pggkr55"
+      }
+    },
+    {
+      "@id": "http://orcid.org/",
+      "@type": "Person",
+      "name": "Jan Dick",
+      "email": "",
+      "affiliation": {
+        "@id": " https://ror.org/00pggkr55"
+      },
+      "@reverse": {
+        "author": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://ror.org/0566bfb96",
+      "@type": "Organization",
+      "name": "UK Centre for Ecology & Hydrology",
+      "url": "https://www.ceh.ac.uk/"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-0401-5122",
+      "@type": "Person",
+      "name": "Julian Lopez Gordillo",
+      "email": "julian.lopezgordillo@naturalis.nl",
+      "affiliation": {
+        "@id": "https://ror.org/0566bfb96"
+      },
+      "@reverse": {
+        "author": [
+          {
+            "@id": "ro-crate-metadata.json"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://ror.org/0566bfb96",
+      "@type": "Organization",
+      "name": "Naturalis Biodiversity Center",
+      "url": "http://www.naturalis.nl/",
+      "@reverse": {
+        "affiliation": [
+          {
+            "@id": "http://orcid.org/0000-0003-0401-5122"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://spdx.org/licenses/MIT.html",
+      "@type": "CreativeWork",
+      "name": "MIT License",
+      "description": "The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology in the late 1980s. As a permissive license, it puts only very limited restriction on reuse and has, therefore, high license compatibility.",
+      "@reverse": {
+        "license": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
+
+    
+<!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script -->
+<script src="https://unpkg.com/ro-crate-html-js/dist/ro-crate-dynamic.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset='utf-8'/>
+<style>
+
+table.table {
+  padding-bottom: 300px;
+}
+</style>
+</head>
+
+
+<body>
+
+  <nav class="navbar">
+
+    <ul class="nav navbar-nav" >
+        <li ><a href="#"><span class="glyphicon glyphicon-home dataset_name">&nbsp;Cultural Ecosystem Services pDT - Biodiversity Model</span></a></li>
+    </ul>
+
+  </nav>
+<div class="container">
+<div class="jumbotron">
+<h4 class="citation"></h3>
+<h3 class="item_name">Cultural Ecosystem Services pDT - Biodiversity Model</h4>
+
+
+<a href="./ro-crate-metadata.json">⬇️🏷️ Download all the metadata for <span class='name'>Cultural Ecosystem Services pDT - Biodiversity Model</span> in JSON-LD format</a>
+
+
+<div id="check"></div>
+
+
+</div>
+
+
+
+<div id="summary">
+<div class='all-meta'>
+           <div>
+            <h3> Cultural Ecosystem Services pDT - Biodiversity Model</h3>
+            
+            
+            
+            
+        <div id="./">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>./</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Cultural Ecosystem Services pDT - Biodiversity Model</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><ul>
+                        <li><span>Dataset</span></li>
+                        
+                        <li><span>SoftwareApplication</span></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>Species distribution models for species that provide cultural ecosystem services.</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#https%3A//orcid.org/0000-0001-6755-9456">Simon Rolph</a></li>
+                        
+                        <li><a href="#http%3A//orcid.org/">Jan Dick</a></li>
+                        
+                        <li><a href="#http%3A//orcid.org/">Jan Dick</a></li>
+                        
+                        <li><a href="#http%3A//orcid.org/">Jan Dick</a></li>
+                        
+                        <li><a href="#http%3A//orcid.org/">Jan Dick</a></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">softwareVersion<span>&nbsp;</span><a href="http://schema.org/softwareVersion">[?]</a></th>
+            <td style='text-align:left'><span>0.1.0</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">dateCreated<span>&nbsp;</span><a href="http://schema.org/dateCreated">[?]</a></th>
+            <td style='text-align:left'><span>2023-06-29</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">dateModified<span>&nbsp;</span><a href="http://schema.org/dateModified">[?]</a></th>
+            <td style='text-align:left'><span>2023-09-10</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">license<span>&nbsp;</span><a href="http://schema.org/license">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//spdx.org/licenses/MIT.html">MIT License</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">codeRepository<span>&nbsp;</span><a href="http://schema.org/codeRepository">[?]</a></th>
+            <td style='text-align:left'><a href="https://github.com/BioDT/uc-ces/">https://github.com/BioDT/uc-ces/</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">contributors</th>
+            <td style='text-align:left'></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">programmingLanguage<span>&nbsp;</span><a href="http://schema.org/programmingLanguage">[?]</a></th>
+            <td style='text-align:left'><span>R</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">runtimePlatform<span>&nbsp;</span><a href="http://schema.org/runtimePlatform">[?]</a></th>
+            <td style='text-align:left'><span>Docker</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">operatingSystem<span>&nbsp;</span><a href="http://schema.org/operatingSystem">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><span>Linux</span></li>
+                        
+                        <li><span>Windows</span></li>
+                        
+                        <li><span>Mac</span></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">softwareRequirements<span>&nbsp;</span><a href="http://schema.org/softwareRequirements">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><span>tidymodels</span></li>
+                        
+                        <li><span>terra</span></li>
+                        
+                        <li><span>rbif</span></li>
+                        </ul></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">about<span>&nbsp;</span><a href="http://schema.org/about">[?]</a></th>
+            <td style='text-align:left'><a href="#ro-crate-metadata.json">ro-crate-metadata.json</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/>
+           <div>
+            <h3><a href="https://orcid.org/0000-0001-6755-9456">Go to: </a> Simon Rolph</h3>
+            
+            
+            
+            
+        <div id="https://orcid.org/0000-0001-6755-9456">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><a href="https://orcid.org/0000-0001-6755-9456">https://orcid.org/0000-0001-6755-9456</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Simon Rolph</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Person</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">affiliation<span>&nbsp;</span><a href="http://schema.org/affiliation">[?]</a></th>
+            <td style='text-align:left'> https://ror.org/00pggkr55</td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">email<span>&nbsp;</span><a href="http://schema.org/email">[?]</a></th>
+            <td style='text-align:left'><span>simrol@ceh.ac.uk</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Cultural Ecosystem Services pDT - Biodiversity Model</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/>
+           <div>
+            <h3><a href="http://orcid.org/">Go to: </a> Jan Dick</h3>
+            
+            
+            
+            
+        <div id="http://orcid.org/">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><a href="http://orcid.org/">http://orcid.org/</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>Jan Dick</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Person</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">affiliation<span>&nbsp;</span><a href="http://schema.org/affiliation">[?]</a></th>
+            <td style='text-align:left'> https://ror.org/00pggkr55</td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">email<span>&nbsp;</span><a href="http://schema.org/email">[?]</a></th>
+            <td style='text-align:left'></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Cultural Ecosystem Services pDT - Biodiversity Model</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/>
+           <div>
+            <h3><a href="https://spdx.org/licenses/MIT.html">Go to: </a> MIT License</h3>
+            
+            
+            
+            
+        <div id="https://spdx.org/licenses/MIT.html">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><a href="https://spdx.org/licenses/MIT.html">https://spdx.org/licenses/MIT.html</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
+            <td style='text-align:left'><span>MIT License</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>CreativeWork</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
+            <td style='text-align:left'><span>The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology in the late 1980s. As a permissive license, it puts only very limited restriction on reuse and has, therefore, high license compatibility.</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">license<span>&nbsp;</span><a href="http://schema.org/license">[?]</a></th>
+            <td style='text-align:left'><a href="#./">Cultural Ecosystem Services pDT - Biodiversity Model</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/></div>
+</div>
+
+
+
+
+
+</body>
+</html>
