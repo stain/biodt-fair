@@ -31,6 +31,7 @@ jobs:
       id-token: write   # to verify the deployment originates from an appropriate source
     runs-on: ubuntu-22.04
     concurrency: ci-${{github.ref}}
+    steps:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
